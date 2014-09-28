@@ -6,18 +6,23 @@
  * @author clif jackson
  */
 
-namespace CODESAMPLES;
+namespace SampleMenus;
 
 date_default_timezone_set('America/New_York');
 
+function _myAutoload($class_name)
+{
+    $path = str_replace(array('_', '\\'), '/', $class_name);
+    include sprintf('%s.php', $path);
+}
+
 set_include_path(realpath('./'));
-spl_autoload_extensions('.me.php');
-spl_autoload_register();
+spl_autoload_register(sprintf('%s\_myAutoload', __NAMESPACE__));
 
-use Classes\Init;
-use Classes\PageMenus;
+use Classes\Init as I;
+use Classes\PageMenus as P;
 
-$i = Init::getInstance();
+$i = I::getInstance();
 $i->init();
 
 ?><!DOCTYPE html>
@@ -35,7 +40,7 @@ $i->init();
 <?php
 try
 {
-	$m = PageMenus::factory($i->getMenuType());
+	$m = P::factory($i->getMenuType());
 	$m->render();
 }
 catch (Exception $e)

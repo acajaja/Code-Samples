@@ -6,8 +6,11 @@ the URL to generate other menus. Options are:
 
 user | admin | super
 
-Example:
+Example Syntax:
 
-http://somedomain.local/run.php
+http://somedomain.local/
 OR
-http://somedomain.local/run.php?type=admin
+http://somedomain.local/?type=admin
+
+Live Example:
+http://jazzopetry.net/sandboxes/SampleMenus/

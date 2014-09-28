@@ -7,7 +7,8 @@ namespace Classes;
  *
  * @author clif jackson
  */
-class Init {
+class Init
+{
 	/**
 	 * 
 	 */
