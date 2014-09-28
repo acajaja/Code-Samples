@@ -9,8 +9,11 @@ user | admin | super
 Example Syntax:
 
 http://somedomain.local/
+
 OR
+
 http://somedomain.local/?type=admin
 
 Live Example:
+
 http://jazzopetry.net/sandboxes/SampleMenus/
