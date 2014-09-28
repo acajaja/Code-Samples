@@ -16,4 +16,4 @@ http://somedomain.local/?type=admin
 
 Live Example:
 
-http://jazzopetry.net/sandboxes/SampleMenus/
+http://sandboxes.jazzopetry.net/SampleMenus/
